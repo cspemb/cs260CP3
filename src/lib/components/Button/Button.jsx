@@ -1,7 +1,14 @@
+import "./Button.scss";
+
 const Button = (props) => {
-  const { handleClick, children, type } = props;
+  const { className, handleClick, children, type, variant, size } = props;
+
   return (
-    <button type={type} onClick={handleClick}>
+    <button
+      className={`Button ${variant}Button ${size} ${className}`}
+      type={type}
+      onClick={handleClick}
+    >
       {children}
     </button>
   );
@@ -9,6 +16,7 @@ const Button = (props) => {
 
 Button.defaultProps = {
   type: "button",
+  variant: "primary",
 };
 
 export default Button;

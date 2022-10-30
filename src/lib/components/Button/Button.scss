@@ -1,0 +1,62 @@
+@use "../../scss/colors";
+
+.Button {
+  border: none;
+  background: transparent;
+  padding: 1em 2em;
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 12px 1px rgba(0 0 0 / 0.2);
+
+  transition: all 125ms ease-out;
+  &.small {
+    padding: 0.75em 1.5em;
+    font-size: 0.95rem;
+  }
+
+  &.big {
+    padding: 1.25em 2.5em;
+    font-size: 1.1rem;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 80%;
+    cursor: pointer;
+  }
+}
+
+.primaryButton {
+  color: colors.$magnolia;
+  background-color: colors.$copper-red;
+}
+
+.secondaryButton {
+  color: colors.$magnolia;
+  background-color: colors.$raisin-black;
+}
+
+.textButton {
+  color: colors.$copper-red;
+  text-decoration: underline;
+  box-shadow: none;
+}
+
+.navButton {
+  color: inherit;
+  font-weight: bold;
+  box-shadow: none;
+
+  &.Button.big {
+    padding: 1em;
+  }
+
+  &:hover,
+  &:focus-visible,
+  &.active {
+    color: colors.$copper-red;
+  }
+
+  &.active {
+    font-size: 1.3em;
+  }
+}

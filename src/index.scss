@@ -1,0 +1,13 @@
+@use "lib/scss/fonts";
+@use "lib/scss/colors";
+
+body {
+  margin: 0;
+  font-family: fonts.$lato;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: colors.$raisin-black;
+  background-color: colors.$magnolia;
+  box-sizing: border-box;
+}

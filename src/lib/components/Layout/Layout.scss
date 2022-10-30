@@ -1,0 +1,52 @@
+@use "../../scss/colors";
+@use "_Hamburger";
+
+header {
+  margin-bottom: 5rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+
+  & path {
+    fill: colors.$copper-red;
+  }
+
+  &:hover,
+  &:focus-visible {
+    cursor: pointer;
+    path {
+      opacity: 80%;
+    }
+  }
+}
+
+.content {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 900px;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  margin-block: 5rem;
+
+  & a {
+    color: colors.$raisin-black;
+    transition: all 125ms ease-out;
+
+    &:hover,
+    &:focus-visible {
+      cursor: pointer;
+      opacity: 60%;
+    }
+  }
+}
