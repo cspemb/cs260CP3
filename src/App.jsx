@@ -12,7 +12,7 @@ const paths = [
 
 function App() {
   return (
-    <BrowserRouter basename="/cp3/dist">
+    <BrowserRouter basename="/cp3/build">
       <Routes>
         <Route path={paths[0].route} element={<Layout paths={paths} />}>
           <Route index element={<Home paths={paths} />} />
