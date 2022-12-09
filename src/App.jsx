@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path={paths[0].route} element={<Layout paths={paths} />}>
-          <Route index element={<Home />} />
+          <Route index element={<Home paths={paths} />} />
           <Route path={paths[1].route} element={<Game2048 />} />
           <Route path={paths[2].route} element={<TicTacToe />} />
           <Route path={paths[3].route} element={<RPS />} />
